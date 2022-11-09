@@ -1,14 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useQuery } from "urql";
-import { PRODUCTS_QUERY } from "../lib/query";
 
 import Products from "../components/Products";
 
 export default function Home() {
-  const [results] = useQuery({ query: PRODUCTS_QUERY });
-  const { data, fetching, error } = results;
-
   return (
     <div>
       <Head>
