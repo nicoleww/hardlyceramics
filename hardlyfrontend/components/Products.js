@@ -1,5 +1,6 @@
 import { useQuery } from "urql";
 import { PRODUCTS_QUERY } from "../lib/query";
+import styles from "../styles/Products.module.css";
 
 import Card from "./Card";
 
