@@ -1,11 +1,11 @@
 import { useQuery } from "urql";
-import { PRODUCTS_QUERY } from "../lib/query";
+import { GET_ALL_QUERY } from "../lib/query";
 import styles from "../styles/Products.module.css";
 
 import Card from "./Card";
 
 export default function Products() {
-  const [results] = useQuery({ query: PRODUCTS_QUERY });
+  const [results] = useQuery({ query: GET_ALL_QUERY });
   const { data, fetching, error } = results;
 
   if (fetching) return <p>Just one second...</p>;
